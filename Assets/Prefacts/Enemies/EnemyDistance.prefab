@@ -173,7 +173,6 @@ MonoBehaviour:
   _navMeshAgent: {fileID: 4426922181324838220}
   _destinations: []
   followPlayer: 1
-  _distanceFollowPlayer: 10
   _distanceFollowPathr: 1.5
 --- !u!114 &8078265554171659803
 MonoBehaviour:
@@ -187,6 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5559faccaadc8684ebfebcf39586c261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoBox: {fileID: 7447600918640644254, guid: 2d4b18bdc55ab614d935c49be0dc4c9c, type: 3}
+  healthBox: {fileID: 7640175054381575197, guid: 740155388726fa04e825a391f0b0c578, type: 3}
   _FlashTime: 0.15
   enemyHealt: 100
   currentHealth: 0

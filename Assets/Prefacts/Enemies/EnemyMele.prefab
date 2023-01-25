@@ -141,7 +141,6 @@ MonoBehaviour:
   _navMeshAgent: {fileID: 2078011129176491949}
   _destinations: []
   followPlayer: 0
-  _distanceFollowPlayer: 10
   _distanceFollowPathr: 1.5
 --- !u!65 &6653363558190414860
 BoxCollider:

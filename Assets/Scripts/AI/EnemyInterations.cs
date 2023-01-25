@@ -41,7 +41,7 @@ public class EnemyInterations : MonoBehaviour
             {
                 Instantiate(ammoBox, transform.position, transform.rotation);
             }
-            if (randomPowerUp==3)
+            if (randomPowerUp == 3)
             {
                 Instantiate(healthBox, transform.position, transform.rotation);
             }

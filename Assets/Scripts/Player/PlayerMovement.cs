@@ -11,6 +11,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public PauseManager pausaM;
     [Header("Components")]
     [Tooltip("handle the character controller")][SerializeField] private CharacterController characterController;
     [SerializeField] private Transform groundCheck;
@@ -46,6 +47,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (pausaM.enPausa == true)
+        {
+            return;
+        }
+        
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
 

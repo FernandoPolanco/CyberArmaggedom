@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject pausePanel;
+    private bool isPaused;
 
     //[SerializeField]private TextMeshProUGUI ammoText;
     [SerializeField]private TextMeshProUGUI healthText;
@@ -26,10 +28,41 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            UpdateGameState();
+            ShowPausePanel();
+        }
         //ammoText.text=gunAmmo.ToString();
         healthText.text=health.ToString();
         WaveText.text=wave.ToString();
     }
+    
+    private void UpdateGameState()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            Time.timeScale = 0f;
+        }
+        else 
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    private void ShowPausePanel()
+    {
+        if (isPaused)
+        {
+            pausePanel.SetActive(true);
+        }
+        else
+        {
+            pausePanel.SetActive(false);
+        }
+    }
+
 
     public void LostHealt(int valueToLost)
     {
