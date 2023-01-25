@@ -23,6 +23,9 @@ public class ShootRayCast : MonoBehaviour
     [SerializeField] private float shootRate = 0.8f;
     private float shootRateTime = 0.5f;
     public int currentAmmo;
+    private AudioSource _audioSource;
+    public AudioClip _shootSnd;
+    
     private bool isRealoding=false;
 
     public static ShootRayCast shootRayInstance { get; private set; }
@@ -37,6 +40,7 @@ public class ShootRayCast : MonoBehaviour
     void Start()
     {
         currentAmmo = maxAmmo;
+        _audioSource=GetComponent<AudioSource>();
         
     }
 
@@ -78,6 +82,7 @@ public class ShootRayCast : MonoBehaviour
         isRealoding = true;
         Debug.Log("Reloading");
         anim.SetBool("IsReloading",true);
+        
         yield return new WaitForSeconds(reloadTime);
         anim.SetBool("IsReloading", false);
 
@@ -88,7 +93,7 @@ public class ShootRayCast : MonoBehaviour
 
     void Shoot()
     {
-
+        _audioSource.PlayOneShot(_shootSnd);
 
 
      

@@ -20192,11 +20192,6 @@ Transform:
   m_Father: {fileID: 207695664}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &1501447618 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1092292013303476166, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
-  m_PrefabInstance: {fileID: 5179156016141647418}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1502017067
 GameObject:
   m_ObjectHideFlags: 0
@@ -30322,26 +30317,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 600708018}
     m_Modifications:
-    - target: {fileID: 1092292013303476162, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1092292013303476162, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1092292013303476164, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1092292013303476164, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2324519931919862075, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
-      propertyPath: muzzle
-      value: 
-      objectReference: {fileID: 1501447618}
     - target: {fileID: 2324519931919862075, guid: 7737ceea4041c144d84a9acbca3b360e, type: 3}
       propertyPath: ammoText
       value: 
@@ -30473,5 +30448,9 @@ PrefabInstance:
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 600708017}
+    - target: {fileID: 9124584367738731487, guid: d6fe1a2360f50de4a9256a9f55bd782f, type: 3}
+      propertyPath: _reloadSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f268095f67575b44b10ea19a4482b2c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6fe1a2360f50de4a9256a9f55bd782f, type: 3}
