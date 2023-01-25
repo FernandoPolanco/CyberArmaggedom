@@ -12,6 +12,7 @@ public class AI : MonoBehaviour
     [Header("Components")]
     [SerializeField] private NavMeshAgent _navMeshAgent;
     [SerializeField] private Transform[] _destinations;
+    [SerializeField] private Animator _anim;
 
     // initialized the start point
     private int i = 0;
@@ -62,5 +63,8 @@ public class AI : MonoBehaviour
     public void FollowPlayer()
     {
         _navMeshAgent.destination = _player.transform.position;
+       
+        _anim.SetBool("IsRun", true);
+
     }
 }
