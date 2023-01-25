@@ -14074,10 +14074,6 @@ MonoBehaviour:
     enemy: {fileID: 3781106353526296046, guid: 74b978ebb306f8346beea4e6e0afe056, type: 3}
     count: 10
     rate: 1
-  - name: Drone
-    enemy: {fileID: 3586422207927281091, guid: 083741e0950bd94459956d57f4be3123, type: 3}
-    count: 10
-    rate: 1.5
   - name: SpiderShoot
     enemy: {fileID: 330317294487329500, guid: 7ea8e4fbe892b8c49a8eb7bef08e3883, type: 3}
     count: 10

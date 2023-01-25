@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _navMeshAgent: {fileID: 3186897048022683807}
   _destinations: []
+  _anim: {fileID: 712208799307911132}
   followPlayer: 0
   _distanceFollowPathr: 1.5
 --- !u!114 &3525392608098019935
@@ -158,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyBullet: {fileID: 5577088550494434414, guid: d6e3c66c3892dde4dab096ba45a5b75a, type: 3}
   spawnBullet: {fileID: 3525392609779464713}
-  speedBullet: 100
+  speedBullet: 400
 --- !u!114 &5923534501308997314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,11 +322,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d988923c393df414595afbc596537e3e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
 --- !u!4 &712208799300132924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
+  m_PrefabInstance: {fileID: 712208799300532924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &712208799307911132 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
   m_PrefabInstance: {fileID: 712208799300532924}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6516986398114174498
