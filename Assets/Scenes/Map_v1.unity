@@ -30448,9 +30448,5 @@ PrefabInstance:
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 600708017}
-    - target: {fileID: 9124584367738731487, guid: d6fe1a2360f50de4a9256a9f55bd782f, type: 3}
-      propertyPath: _reloadSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 8f268095f67575b44b10ea19a4482b2c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6fe1a2360f50de4a9256a9f55bd782f, type: 3}

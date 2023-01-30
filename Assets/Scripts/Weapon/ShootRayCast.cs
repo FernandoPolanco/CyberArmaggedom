@@ -25,6 +25,7 @@ public class ShootRayCast : MonoBehaviour
     public int currentAmmo;
     private AudioSource _audioSource;
     public AudioClip _shootSnd;
+    public AudioClip _reloadSnd;
     
     private bool isRealoding=false;
 
@@ -79,9 +80,12 @@ public class ShootRayCast : MonoBehaviour
 
     IEnumerator Reload()
     {
-        isRealoding = true;
-        Debug.Log("Reloading");
-        anim.SetBool("IsReloading",true);
+         isRealoding = true;
+            _audioSource.PlayOneShot(_reloadSnd);
+            Debug.Log("Reloading");
+            anim.SetBool("IsReloading", true);
+        
+       
         
         yield return new WaitForSeconds(reloadTime);
         anim.SetBool("IsReloading", false);

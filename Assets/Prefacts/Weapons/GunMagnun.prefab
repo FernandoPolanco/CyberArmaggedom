@@ -107,6 +107,7 @@ MonoBehaviour:
   shootRate: 1
   currentAmmo: 0
   _shootSnd: {fileID: 8300000, guid: 947719fd38845824ba3638af9d8e4e54, type: 3}
+  _reloadSnd: {fileID: 8300000, guid: 2868e580baee45d449931dc35a5ace81, type: 3}
 --- !u!95 &427700586
 Animator:
   serializedVersion: 4

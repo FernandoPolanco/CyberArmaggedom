@@ -433,6 +433,7 @@ MonoBehaviour:
   shootRate: 0.2
   currentAmmo: 0
   _shootSnd: {fileID: 8300000, guid: 947719fd38845824ba3638af9d8e4e54, type: 3}
+  _reloadSnd: {fileID: 8300000, guid: 2868e580baee45d449931dc35a5ace81, type: 3}
 --- !u!95 &4374036195127271689
 Animator:
   serializedVersion: 4
@@ -478,7 +479,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 947719fd38845824ba3638af9d8e4e54, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.455
+  m_Volume: 0.482
   m_Pitch: 1
   Loop: 0
   Mute: 0
